@@ -9,22 +9,24 @@ public class Main {
 
     private static void showmenu() {
         Scanner scanner = new Scanner(System.in);
-        int number=0;
+        int number = 0;
+        int menunumber = 0;
 
-        System.out.println("1. Dodaj osobę");
-        System.out.println("2. Pokaż listę osób");
-        System.out.println("3. Eksport bazy do pliku");
-        System.out.println("4. Import bazy z pliku");
-        System.out.println("5. Zamknij program");
+        System.out.println(++menunumber + ". Dodaj osobę");
+        System.out.println(++menunumber + ". Pokaż listę osób");
+        System.out.println(++menunumber + ". Eksport bazy do pliku");
+        System.out.println(++menunumber + ". Import bazy z pliku");
+        System.out.println(++menunumber + ". Sortowanie po kluczu");
+        System.out.println(++menunumber + ". Zamknij program");
         try {
-            while(number>5 || number<1)
-            number = scanner.nextInt();
-        }
-        catch (Exception e){
-            showmenu();
+            while (number > menunumber || number < 1){
+                System.out.println("Wpisz twój wybór: ");
+                number = scanner.nextInt();}
+        } catch (Exception e) {
+            Main.showmenu();
         }
 
-        switch (number){
+        switch (number) {
             case 1: {
                 //Wywołanie dodania osoby
                 break;
@@ -41,15 +43,25 @@ public class Main {
                 //Wywołanie importu z bazy
                 break;
             }
+
+
             case 5: {
+                //Wywołanie sortowania
+
+                break;
+            }
+
+
+            case 6: {
                 //Koniec programu
                 System.out.println("Program się zamyka!");
                 break;
             }
-            default:
-                showmenu();
-                break;
-        }
 
+        default:{
+        Main.showmenu();
+        break;}
     }
+
+}
 }
