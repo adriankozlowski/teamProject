@@ -7,9 +7,10 @@ public  class Person {
     private String imie;
     private String nazwisko;
     private int rokUrodz;
-    private String miastoZamiesz;
+    private String miastoZamieszkania;
     private String ulica;
     private int kodPocztowy;
+
     private String stanowisko;
 
     public Person(String imie, String nazwisko, int rokUrodz, String miastoZamiesz, String ulica, int kodPocztowy, String stanowisko) {
@@ -18,7 +19,7 @@ public  class Person {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.rokUrodz = rokUrodz;
-        this.miastoZamiesz = miastoZamiesz;
+        this.miastoZamieszkania = miastoZamiesz;
         this.ulica = ulica;
         this.kodPocztowy = kodPocztowy;
         this.stanowisko = stanowisko;
@@ -56,12 +57,12 @@ public  class Person {
         this.rokUrodz = rokUrodz;
     }
 
-    public String getMiastoZamiesz() {
-        return miastoZamiesz;
+    public String getMiastoZamieszkania() {
+        return miastoZamieszkania;
     }
 
-    public void setMiastoZamiesz(String miastoZamiesz) {
-        this.miastoZamiesz = miastoZamiesz;
+    public void setMiastoZamieszkania(String miastoZamieszkania) {
+        this.miastoZamieszkania = miastoZamieszkania;
     }
 
     public String getUlica() {

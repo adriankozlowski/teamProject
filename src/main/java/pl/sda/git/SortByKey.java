@@ -55,7 +55,7 @@ public class SortByKey {
                     case STANOWISKO:
                         return o1.getStanowisko().compareTo(o2.getStanowisko());
                     case MIASTOURODZENIA:
-                        return o1.getMiastoZamiesz().compareTo(o2.getMiastoZamiesz());
+                        return o1.getMiastoZamieszkania().compareTo(o2.getMiastoZamieszkania());
                     case ULICA:
                         return o1.getUlica().compareTo(o2.getUlica());
                     case ROKURODZENIA:

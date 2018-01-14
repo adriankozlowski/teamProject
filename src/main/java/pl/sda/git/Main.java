@@ -43,27 +43,9 @@ public class Main {
                 case 2: {
                     personList.showList();
 
-<<<<<<< .merge_file_a03824
-                    //Wywołanie  pokazania listy osób
-                    break;
-                }
-                case 3: {
-                    ////Wywołanie  eksportu do pliku
-                    break;
-                }
-                case 4: {
-                    //Wywołanie importu z bazy
-                    break;
-                }
-=======
                 System.out.println("------------");
 
                 Main.showmenu();
-                break;
-            }
-            case 2: {
-                //Wywołanie  pokazania listy osób
-                personList.showList();
                 break;
             }
             case 3: {
@@ -74,7 +56,6 @@ public class Main {
                 //Wywołanie importu z bazy
                 break;
             }
->>>>>>> .merge_file_a03152
 
 
                 case 5: {

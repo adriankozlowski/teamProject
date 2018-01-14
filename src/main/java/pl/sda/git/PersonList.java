@@ -1,7 +1,5 @@
 package pl.sda.git;
 
-import pl.sda.git.Person;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -16,7 +14,7 @@ public class PersonList {
 
             System.out.println(person.getImie());
             System.out.print(" " + person.getNazwisko());
-            System.out.print(" " + person.getMiastoZamiesz());
+            System.out.print(" " + person.getMiastoZamieszkania());
             System.out.println();
 
         }
