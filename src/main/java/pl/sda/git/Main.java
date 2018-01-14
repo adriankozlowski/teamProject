@@ -47,47 +47,12 @@ public class Main {
             }
             case 4: {
                 //Wywołanie importu z bazy
-                Scanner scan = new Scanner(System.in);
-                BufferedReader inputStream = null;
-                System.out.println("Podaj ścieżę");
-                String pat = scan.nextLine();
-                Path path = Paths.get(pat);
-
-                try {
-                    inputStream = new BufferedReader(new FileReader(pat));
-                } catch (FileNotFoundException e) {
-                    System.out.println("Taki plik nie istnieje");
-                    break;
-                }
-
-                //WYSWIETLANIE DANYCH
-                try (BufferedReader br = new BufferedReader(new FileReader(pat))) {
-
-                    String line;
-
-                    while ((line = br.readLine()) != null) {
-                        System.out.println(line);
-                    }
-
-                }
-                catch (IOException e) {
-                    System.out.println("Koniec pliku");
-
-                }
-
-                //WYCZYSZCZENIE BUFORA
-                finally {
-                    if (inputStream != null) {
-                        try {
-                            inputStream.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-
+                Import.importFiles();
                 break;
-            }
+                }
+
+
+
                 case 5: {
                 //Wywołanie sortowania
 
