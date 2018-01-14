@@ -52,8 +52,8 @@ public class Main {
 
 
             case 5: {
-                //Wywołanie sortowania
-
+                //Sortowanie listy
+                SortByKey.sort(personList.getList());
                 break;
             }
 

@@ -40,4 +40,8 @@ public class PersonList {
 
         System.out.println("Osoba dodana");
     }
+
+    public List<Person> getList() {
+        return list;
+    }
 }
