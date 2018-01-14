@@ -34,6 +34,9 @@ public class Main {
 
                 personList.addPerson();
 
+                System.out.println("------------");
+
+                Main.showmenu();
                 break;
             }
             case 2: {
