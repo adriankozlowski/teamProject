@@ -14,9 +14,13 @@ public class PersonList {
 
         for (Person person : list) {
 
-            System.out.println(person.getImie());
+            System.out.println(person.getLosIdent());
+            System.out.print(" " + person.getImie());
             System.out.print(" " + person.getNazwisko());
             System.out.print(" " + person.getMiastoZamiesz());
+            System.out.print(" " + person.getUlica());
+            System.out.print(" " + person.getKodPocztowy());
+            System.out.print(" " + person.getStanowisko());
             System.out.println();
 
         }
