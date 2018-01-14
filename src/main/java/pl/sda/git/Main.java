@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         showmenu();
     }
-
+    static PersonList personList = new PersonList();
     private static void showmenu() {
         Scanner scanner = new Scanner(System.in);
         int number = 0;
@@ -29,10 +29,13 @@ public class Main {
         switch (number) {
             case 1: {
                 //Wywołanie dodania osoby
+
+                personList.addPerson();
                 break;
             }
             case 2: {
                 //Wywołanie  pokazania listy osób
+                personList.showList();
                 break;
             }
             case 3: {
