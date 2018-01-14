@@ -11,8 +11,12 @@ public class PersonList {
     public void showList() {
 
         for (Person person : list) {
+
             System.out.println(person.getImie());
-            //itd
+            System.out.print(" " + person.getNazwisko());
+            System.out.print(" " + person.getMiastoZamiesz());
+            System.out.println();
+
         }
     }
 
