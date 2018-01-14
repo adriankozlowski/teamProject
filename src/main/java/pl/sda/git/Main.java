@@ -7,6 +7,8 @@ public class Main {
         showmenu();
     }
     static PersonList personList = new PersonList();
+
+
     private static void showmenu() {
         Scanner scanner = new Scanner(System.in);
         int number = 0;
@@ -31,6 +33,7 @@ public class Main {
                 //Wywołanie dodania osoby
 
                 personList.addPerson();
+
                 break;
             }
             case 2: {

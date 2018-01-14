@@ -2,7 +2,7 @@ package pl.sda.git;
 
 import java.util.Random;
 
-public class Person {
+public  class Person {
     private int losIdent;
     private String imie;
     private String nazwisko;
