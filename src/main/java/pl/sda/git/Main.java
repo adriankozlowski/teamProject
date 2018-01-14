@@ -55,13 +55,11 @@ public class Main {
                     break;
                 }
 
-
-            case 5: {
-                //Sortowanie listy
-                SortByKey.sort(personList.getList());
-                break;
-            }
-
+                case 5: {
+                    //Sortowanie listy
+                    SortByKey.sort(personList.getList());
+                    break;
+                }
 
                 case 6: {
                     //Koniec programu
